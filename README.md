@@ -1,5 +1,5 @@
 
-[![N|Solid](https://i.imgur.com/UR281x3.png)](http://vps.com)
+[![N|Solid](https://i.imgur.com/UR281x3.png)](https://chat-app-63eec.web.app/)
 
 This app is a free and simple chat app with zero compromise.
 
