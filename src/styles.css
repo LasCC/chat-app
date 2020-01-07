@@ -1,0 +1,151 @@
+* {
+	font-family: "Poppins", sans-serif !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+	border-color: #0085d1 !important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+	color: #0085d1 !important;
+}
+
+.chatFrame {
+	height: 419px;
+	overflow-x: hidden;
+}
+
+.chat {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+}
+
+.messages {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.message {
+	border-radius: 20px;
+	padding: 8px 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.yours {
+	align-items: flex-start;
+}
+
+.yours .message {
+	margin-right: 25%;
+	background-color: #eee;
+	position: relative;
+}
+
+.yours .message.last:before {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	bottom: 0;
+	left: -7px;
+	height: 20px;
+	width: 20px;
+	background: #eee;
+	border-bottom-right-radius: 15px;
+}
+.yours .message.last:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: -10px;
+	width: 10px;
+	height: 20px;
+	background: white;
+	border-bottom-right-radius: 10px;
+}
+
+.mine {
+	align-items: flex-end;
+}
+
+.mine .message {
+	color: white;
+	margin-left: 25%;
+	background: linear-gradient(to bottom, #00d0ea 0%, #0085d1 100%);
+	background-attachment: fixed;
+	position: relative;
+}
+
+.mine .message.last:before {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	bottom: 0;
+	right: -8px;
+	height: 20px;
+	width: 20px;
+	background: linear-gradient(to bottom, #00d0ea 0%, #0085d1 100%);
+	background-attachment: fixed;
+	border-bottom-left-radius: 15px;
+}
+
+.mine .message.last:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: -10px;
+	width: 10px;
+	height: 20px;
+	background: white;
+	border-bottom-left-radius: 10px;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.pulseAnim {
+	width: 1px;
+	height: 1px;
+	display: block;
+	padding: 10px;
+	border-radius: 50%;
+	background: #58f360;
+	cursor: pointer;
+	box-shadow: 0 0 0 rgba(28, 255, 115, 0.4);
+	-moz-animation: pulse 2s infinite;
+	-webkit-animation: pulse 2s infinite;
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(28, 255, 115, 0.4);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgba(28, 255, 115, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(28, 255, 115, 0);
+	}
+}
