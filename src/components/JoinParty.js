@@ -16,7 +16,11 @@ export default props => {
 	return (
 		<Container maxWidth="lg">
 			<Box
-				style={{ height: "90vh", position: "relative", zIndex: "10" }}
+				style={{
+					height: "90vh",
+					position: "relative",
+					zIndex: "10"
+				}}
 				display="flex"
 				alignItems="center"
 				justifyContent="center"

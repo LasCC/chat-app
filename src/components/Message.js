@@ -5,9 +5,9 @@ const moment = require("moment");
 const Message = ({ message: { user, text }, name }) => {
 	let isSentByCurrentUser = false;
 
-	const timmedUsername = name.trim().toLowerCase();
+	const trimmedUser = name.trim().toLowerCase();
 
-	if (user === timmedUsername) {
+	if (user === trimmedUser) {
 		isSentByCurrentUser = true;
 	}
 
@@ -16,7 +16,7 @@ const Message = ({ message: { user, text }, name }) => {
 			<div className="mine messages">
 				<div>
 					<Typography variant="body2">
-						{timmedUsername} - {moment().calendar()}
+						{trimmedUser} - {moment().calendar()}
 					</Typography>
 				</div>
 				<div className="message last">{text}</div>

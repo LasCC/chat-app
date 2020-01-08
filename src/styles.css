@@ -1,5 +1,6 @@
 * {
 	font-family: "Poppins", sans-serif !important;
+	/* margin: 0px !important; */
 }
 
 .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
@@ -11,7 +12,7 @@
 }
 
 .chatFrame {
-	height: 419px;
+	height: 80vh;
 	overflow-x: hidden;
 }
 
@@ -128,10 +129,9 @@
 	width: 1px;
 	height: 1px;
 	display: block;
-	padding: 10px;
+	padding: 6px;
 	border-radius: 50%;
 	background: #58f360;
-	cursor: pointer;
 	box-shadow: 0 0 0 rgba(28, 255, 115, 0.4);
 	-moz-animation: pulse 2s infinite;
 	-webkit-animation: pulse 2s infinite;
