@@ -33,7 +33,6 @@ Chat app use [Node.js](https://nodejs.org/) to run but for my purpose I put the 
 Install the dependencies and start the server.
 
 ```sh
-$ cd front
 $ npm i 
 $ npm start
 ```
